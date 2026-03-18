@@ -1,0 +1,9 @@
+name: 최진제
+addr: 대구
+foods: 
+  - 맥주
+  - 베이컨
+isMan: true
+body:
+  weight: 75
+  height: 174
