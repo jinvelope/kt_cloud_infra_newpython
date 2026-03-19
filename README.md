@@ -8,6 +8,12 @@ git clone ....
 cd ....
 ```
 
+```python
+num: int = 10
+
+def test():
+    print("야르")
+
 테스트 메세지 입니다.
 이제 커밋을 할겁니다.
 야rrrrrrrrr
