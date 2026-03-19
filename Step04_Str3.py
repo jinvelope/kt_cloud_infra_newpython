@@ -18,8 +18,16 @@ body:
 # 그런 다음 dict에 들어있는 내용을 확인 후 다시 dict에 있는 내용을 이용해서 yaml 문자열 형식으로 변환해보세요.
 import yaml
 
-result = yaml.load(info, Loader=yaml.FullLoader)
-result2 = yaml.dump(result)
+# yaml형식의 문자열을 로딩해서 dict 타입으로 변경하기
+test = yaml.safe_load(info)
+print(test)
 
-print(result)
-print(result2)
+# dict 타입을 다시 yaml 형식으로 변환하기
+dict = yaml.dump(test, allow_unicode=True, sort_keys=False)
+print(dict)
+
+# result = yaml.load(info, Loader=yaml.FullLoader)
+# result2 = yaml.dump(result)
+
+# print(type(result))
+# print(result2)
