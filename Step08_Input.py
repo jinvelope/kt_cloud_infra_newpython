@@ -13,3 +13,6 @@ print(f"이름 : {input_name}, 주소 : {input_addr}")
 
 # 문자열로 입력 받은 후
 input_age: str = input("나이 입력:")
+
+age: int = int(input_age) + 1
+print(f"당신은 내년에 {age}살 입니다")
