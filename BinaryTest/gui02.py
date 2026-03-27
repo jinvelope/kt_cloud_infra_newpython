@@ -15,7 +15,7 @@ def clicked():
     try:
         if not (0 <= int(input_value) <= 255):
             messagebox.showerror("에러", "0~255 사이 숫자만 입력 가능합니다")
-            result_label = tk.Label(root, text="결과...")
+            result_label.config(text="결과...", fg="black")
             return
             # result_label.config(text=f"변환한 2진수 : {int(input_value):08b}", fg="blue")
         # else:
